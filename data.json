@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "type": "Art",
+    "name": "Jet Stream",
+    "um": {
+      "name": "Otherworldly Rodsin",
+      "level": 60,
+      "region": "Cadensia Region",
+      "location": ""
+    },
+    "acquired": false,
+    "upgrade": {
+      "upgraded": false,
+      "upgradeGoal": "Use this Art the specificed number of times.",
+      "currentProgress": 0,
+      "maxProgress": 100
+    }
+  }
+]
