@@ -10,13 +10,33 @@
       .upgraded {
         background-color: green
       }
+
+      tr:nth-child(even) {
+        background-color: rgba(200, 200, 200, 0.5)
+      }
     </style>
   </head>
   <body>
-    <!-- <table id="table">
+    <table>
+      <thead>
+        <tr>
+          <th onclick="sortColumn('type')">Type</th>
+          <th onclick="sortColumn('name')">Name</th>
+          <th>UM Name</th>
+          <th>UM Level</th>
+          <th onclick="sortColumn('region')">Region</th>
+          <th>Location</th>
+          <th>Upgrade Goal</th>
+          <th>Current Progress</th>
+          <th>Requirement</th>
+          <th>Acquired</th>
+          <th>Upgraded</th>
+       </tr>
+      </thead>
+      <tbody class="tableBody">
+      </tbody>
+    </table>
 
-    </table> -->
-    <div class="output"></div>
     <script src="js.js"></script>
   </body>
 </html>
