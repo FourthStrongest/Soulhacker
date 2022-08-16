@@ -1,53 +1,32 @@
 [
   {
     "type": "Art",
-    "name": "Jet Stream",
-    "um": {
-      "name": "Otherworldly Rodsin",
-      "level": 60,
-      "region": "Cadensia Region",
-      "location": ""
-    },
-    "acquired": false,
-    "upgrade": {
-      "upgraded": false,
-      "upgradeGoal": "Use this Art the specificed number of times.",
-      "currentProgress": 0,
-      "maxProgress": 100
-    }
+    "name": "Jet_Stream",
+    "umName": "Otherworldly Rodsin",
+    "level": 60,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
   },
   {
-    "type": "Skill",
-    "name": "Jet Stream",
-    "um": {
-      "name": "Otherworldly Rodsin",
-      "level": 61,
-      "region": "Cadensia Region",
-      "location": ""
-    },
-    "acquired": false,
-    "upgrade": {
-      "upgraded": false,
-      "upgradeGoal": "Use this Art the specificed number of times.",
-      "currentProgress": 0,
-      "maxProgress": 100
-    }
+    "type": "BArt",
+    "name": "Jet_Stream2",
+    "umName": "Otherworldly Rodsin",
+    "level": 61,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
   },
   {
-    "type": "Poop",
-    "name": "Jet Stream",
-    "um": {
-      "name": "Otherworldly Rodsin",
-      "level": 62,
-      "region": "Cadensia Region",
-      "location": ""
-    },
-    "acquired": false,
-    "upgrade": {
-      "upgraded": false,
-      "upgradeGoal": "Use this Art the specificed number of times.",
-      "currentProgress": 0,
-      "maxProgress": 100
-    }
+    "type": "CArt",
+    "name": "Jet_Stream3",
+    "umName": "Otherworldly Rodsin",
+    "level": 62,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
   }
 ]

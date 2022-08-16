@@ -1,29 +1,22 @@
 <html>
   <head>
     <style>
-      .unacquired {
-        background-color: red
-      }
-      .acquired {
-        background-color: blue
-      }
-      .upgraded {
-        background-color: green
-      }
-
       tr:nth-child(even) {
         background-color: rgba(200, 200, 200, 0.5)
       }
     </style>
+    Soulhacker Tracker
   </head>
   <body>
+    <!-- <label for="c1"> <input type="checkbox" name="darkMode" value="red" id="c1">Red</label> -->
+
     <table>
       <thead>
         <tr>
           <th onclick="sortColumn('type')">Type</th>
           <th onclick="sortColumn('name')">Name</th>
-          <th>UM Name</th>
-          <th>UM Level</th>
+          <th onclick="sortColumn('umName')">UM Name</th>
+          <th onclick="sortColumn('level')">UM Level</th>
           <th onclick="sortColumn('region')">Region</th>
           <th>Location</th>
           <th>Upgrade Goal</th>
@@ -31,12 +24,14 @@
           <th>Requirement</th>
           <th>Acquired</th>
           <th>Upgraded</th>
-       </tr>
+        </tr>
       </thead>
       <tbody class="tableBody">
       </tbody>
     </table>
 
+    <br />
+    Made by me
     <script src="js.js"></script>
   </body>
 </html>

@@ -1,23 +1,9 @@
 const url = "data.json"
-let dataSet = null
+let currentDataState = null
+let saveDataState = []
 let sortDirection = true
 
 const tableBody = document.querySelector('.tableBody')
-const type = document.createElement('td')
-const asName = document.createElement('td')
-const umName = document.createElement('td')
-const umLevel = document.createElement('td')
-const umRegion = document.createElement('td')
-const umLocation = document.createElement('td')
-const upgradeGoal = document.createElement('td')
-const currentProgress = document.createElement('td')
-const requirement = document.createElement('td')
-const acquired = document.createElement('td')
-const upgraded = document.createElement('td')
-
-const editCurrentProgress = document.createElement('input')
-const acquiredButton = document.createElement('input')
-const upgradedButton = document.createElement('input')
 
 window.addEventListener('DOMContentLoaded', () => {
   loadData()
@@ -26,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 function loadData() {
   fetch(url).then(rep => rep.json())
   .then(data => {
-    dataSet = data
+    currentDataState = data
     loadTableData(data)
   })
 }
@@ -35,51 +21,36 @@ function loadTableData(data) {
   let dataHtml = ''
 
   data.forEach(e => {
-    //TODO
-    saveLocalStorage(e.name, e.upgrade.currentProgress)
+    const acquiredElement = document.createElement('td')
+    const upgradedElement = document.createElement('td')
+    const acquiredHtml = `<input type='checkbox' id='acquired' onclick='onClickCheckbox(this.parentNode.parentNode)' ${localStorage.getItem(`${e.name}Acq`) === 'true' ? 'checked' : ''}>`
+    const upgradedHtml = `<input type='checkbox' id='upgraded' onclick='onClickCheckbox(this.parentNode.parentNode)' ${localStorage.getItem(`${e.name}Upg`) === 'true' ? 'checked' : ''}>`
+    acquiredElement.innerHTML = acquiredHtml
+    upgradedElement.innerHTML = upgradedHtml
 
-    dataHtml += `<tr>
+    let trHtml = `
+    <tr id=${e.name} style='background-color: ${setBackgroundColors(acquiredElement.firstChild, upgradedElement.firstChild)}'>
       <td>${e.type}</td>
-      <td>${e.name}</td>
-      <td>${e.um.name}</td>
-      <td>${e.um.level}</td>
-      <td>${e.um.region}</td>
-      <td>${e.um.location}</td>
-      <td>${e.upgrade.upgradeGoal}</td>
-      <td><input value=${localStorage.getItem(e.name + "prog")}></td>
-      <td>${e.upgrade.maxProgress}</td>
-      <td><input type='checkbox' id='acquired'></td>
-      <td><input type='checkbox' id='upgraded'></td>
-    </tr>`
-  })
+      <td>${e.name.replace('_', ' ')}</td>
+      <td>${e.umName}</td>
+      <td>${e.level}</td>
+      <td>${e.region}</td>
+      <td>${e.location}</td>
+      <td>${e.upgradeGoal}</td>
+      <td><input id='prog' value=${localStorage.getItem(`${e.name}Prog`) || 0} oninput='onInputChange(this.parentNode.parentNode)'></td>
+      <td>${e.maxProgress}</td>
+      <td>${acquiredElement.innerHTML}</td>
+      <td>${upgradedElement.innerHTML}</td></tr>
+    `
 
-  acquiredButton.addEventListener('click', () => {
-    //acquired.checked = true
-    setRowStyle(tr, acquired)
-  })
-  upgradedButton.addEventListener('click', () => {
-    console.log('hi')
-    acquired.checked = true
-    upgraded.checked = true
-    //setRowStyle(tr)
+    dataHtml += trHtml
   })
 
   tableBody.innerHTML = dataHtml
 }
 
-function setRowStyle(tr, td) {
-  console.log(tr, td)
-  if (td.id == "upgraded" && td.checked) {
-    tr.style.backgroundColor = "green"
-  } else if (td.id == "acquired" && td.checked) {
-    tr.style.backgroundColor = "blue"
-  } else {
-    tr.style.backgroundColor = "red"
-  }
-}
-
 function sortColumn(columnName) {
-  const dataType = typeof dataSet[0][columnName]
+  const dataType = typeof currentDataState[0][columnName]
   
   sortDirection = !sortDirection
 
@@ -92,89 +63,49 @@ function sortColumn(columnName) {
       break
   }
 
-  loadTableData(dataSet)
+  loadTableData(currentDataState)
 }
 
 function sortNumberColumn(columnName) {
-  dataSet = dataSet.sort((e1, e2) => {
+  currentDataState = currentDataState.sort((e1, e2) => {
     return sortDirection ? e1[columnName] - e2[columnName] : e2[columnName] - e1[columnName]
   })
 }
 
 function sortTextColumn(columnName) {
-  dataSet = dataSet.sort((p1, p2) => {
-   return sortDirection ? (p1[columnName] > p2[columnName]) - (p1[columnName] < p2[columnName]) : (p2[columnName] > p1[columnName]) - (p2[columnName] < p1[columnName])
-  });
- }
-
- function saveLocalStorage(id, prog) {
-  if (localStorage.getItem(id + "prog") === null) {
-    localStorage.setItem(id + "prog", prog)
-  }
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- function addRowsToPage(arr) {
-  arr.forEach(e => {
-    const tr = document.createElement('tr')
-    //const tr = tableBody.insertRow()
-
-    type.textContent = e.type
-    asName.textContent = e.name
-    umName.textContent = e.um.name
-    umLevel.textContent = e.um.level
-    umRegion.textContent = e.um.region
-    umLocation.textContent = e.um.location
-    upgradeGoal.textContent = e.upgrade.upgradeGoal
-    editCurrentProgress.setAttribute('value', e.upgrade.currentProgress)
-    requirement.textContent = e.upgrade.maxProgress
-
-    currentProgress.append(editCurrentProgress)
-    acquiredButton.setAttribute('type', 'checkbox')
-    acquiredButton.setAttribute('id', 'acquired')
-    upgradedButton.setAttribute('type', 'checkbox')
-    upgradedButton.setAttribute('id', 'upgraded')
-    acquired.append(acquiredButton)
-    upgraded.append(upgradedButton)
-
-    tr.append(type)
-    tr.append(asName)
-    tr.append(umName)
-    tr.append(umLevel)
-    tr.append(umRegion)
-    tr.append(umLocation)
-    tr.append(upgradeGoal)
-    tr.append(currentProgress)
-    tr.append(requirement)
-    tr.append(acquired)
-    tr.append(upgraded)
-
-    //setRowStyle(tr)
-
-    acquiredButton.addEventListener('click', () => {
-      //acquired.checked = true
-      //setRowStyle(tr, acquired)
-    })
-    upgradedButton.addEventListener('click', () => {
-      acquired.checked = true
-      upgraded.checked = true
-      //setRowStyle(tr)
-    })
-
-    tableBody.append(tr)
+  currentDataState = currentDataState.sort((p1, p2) => {
+    return sortDirection ? (p1[columnName] > p2[columnName]) - (p1[columnName] < p2[columnName]) : (p2[columnName] > p1[columnName]) - (p2[columnName] < p1[columnName])
   })
+}
+
+function onClickCheckbox(tr) {
+  const acq = tr.querySelector('#acquired')
+  const upg = tr.querySelector('#upgraded')
+  setRowStyle(tr, acq, upg)
+  localStorage.setItem(`${tr.id}Acq`, acq.checked)
+  localStorage.setItem(`${tr.id}Upg`, upg.checked)
+}
+
+function setRowStyle(tr, acq, upg) {
+  tr.style.backgroundColor = setBackgroundColors(acq, upg)
+}
+
+function setBackgroundColors(acq, upg) {
+  let color = setBackgroundColor(upg)
+  if (color == 'red') color = setBackgroundColor(acq)
+  return color
+}
+
+function setBackgroundColor(input) {
+  const green = 'rgba(0, 255, 0, 0.5)'
+  const blue = 'rgba(0, 0, 255, 0.5)'
+  const red = 'rgba(255, 0, 0, 0.5)'
+  if (input.id == 'upgraded' && input.checked) return green
+  if (input.id == 'acquired' && input.checked) return blue
+  return 'red'
+}
+
+function onInputChange(tr) {
+  const val = tr.querySelector(`#prog`).value
+  localStorage.setItem(`${tr.id}Prog`, val)
 }
