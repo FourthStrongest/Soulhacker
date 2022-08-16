@@ -97,11 +97,11 @@ function setBackgroundColors(acq, upg) {
 }
 
 function setBackgroundColor(input) {
+  const red = 'rgba(255, 0, 0, 0.5)'
   const green = 'rgba(0, 255, 0, 0.5)'
   const blue = 'rgba(0, 0, 255, 0.5)'
-  const red = 'rgba(255, 0, 0, 0.5)'
-  if (input.id == 'upgraded' && input.checked) return green
-  if (input.id == 'acquired' && input.checked) return blue
+  if (input.id == 'upgraded' && input.checked) return blue
+  if (input.id == 'acquired' && input.checked) return green
   return 'red'
 }
 
