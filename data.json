@@ -1,6 +1,456 @@
 [
   {
     "type": "Art",
+    "name": "Horn_Dance",
+    "umName": "Perspicacious Oldar",
+    "level": 20,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Discover the specified number of landmarks in total.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Dragon_Gas",
+    "umName": "Villainous Igna",
+    "level": 46,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Villainous Igna)",
+    "maxProgress": 10
+  },
+  {
+    "type": "Art",
+    "name": "Murder_Knuckle",
+    "umName": "Ghostfist Róisín",
+    "level": 66,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters in total.",
+    "maxProgress": 1800
+  },
+  {
+    "type": "Art",
+    "name": "Dino_Flash",
+    "umName": "Fineblade Faltaar",
+    "level": 47,
+    "region": "Swordmarch",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Dual_Attack",
+    "umName": "Seadragoon Melchior",
+    "level": 85,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Seadragoon Melchior)",
+    "maxProgress": 5
+  },
+  {
+    "type": "Art",
+    "name": "Cavalry",
+    "umName": "Littlefort Morley",
+    "level": 46,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Littlefort Morley)",
+    "maxProgress": 10
+  },
+  {
+    "type": "Art",
+    "name": "Toxic_Gas",
+    "umName": "Spectral Rémy",
+    "level": 42,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Neck_Slice",
+    "umName": "Forsaken Arbiter",
+    "level": 42,
+    "region": "Keves Castle Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Spit_Beam",
+    "umName": "Mobile Vespa",
+    "level": 41,
+    "region": "Keves Castle Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Mobile Vespa)",
+    "maxProgress": 10
+  },
+  {
+    "type": "Art",
+    "name": "Spinning_Bolt",
+    "umName": "Diabolical Rindolph",
+    "level": 49,
+    "region": "Keves Castle Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Dino_Storm",
+    "umName": "Blazing Karlos",
+    "level": 40,
+    "region": "Keves Castle Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Double_Strike",
+    "umName": "Bloodsucking Elvis",
+    "level": 53,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Double_Slap",
+    "umName": "Saberly Dorampé",
+    "level": 65,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Fin_of_Fear",
+    "umName": "Massive Georges",
+    "level": 37,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Tail_Slap",
+    "umName": "Scornful Daria",
+    "level": 22,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Spider_Web",
+    "umName": "Flyswatter Kamado",
+    "level": 77,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Discover the specified number of Secret Areas in total.",
+    "maxProgress": 4
+  },
+  {
+    "type": "Art",
+    "name": "Desperate_Charge",
+    "umName": "King Krawkin",
+    "level": 102,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (King Krawkin)",
+    "maxProgress": 3
+  },
+  {
+    "type": "Art",
+    "name": "Life_Plant",
+    "umName": "Gorgeous Mandora",
+    "level": 96,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Psychowave",
+    "umName": "Obliterator Centaurio",
+    "level": 91,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Rhino_Storm",
+    "umName": "Foolhardy Saide",
+    "level": 58,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Wild_Wave",
+    "umName": "Immovable Gonzalez",
+    "level": 88,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Predation",
+    "umName": "Ruthless Grokken",
+    "level": 81,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of unique monsters in total.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Radiant_Arts",
+    "umName": "Shimmering Marcko",
+    "level": 28,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Learn the specified number of Arts from monsters in total.",
+    "maxProgress": 40
+  },
+  {
+    "type": "Art",
+    "name": "Thunderclap",
+    "umName": "Wicked Wolf Aranqui",
+    "level": 70,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters in total.",
+    "maxProgress": 1500
+  },
+  {
+    "type": "Art",
+    "name": "Raid_Strike",
+    "umName": "Puzzled Raquinu",
+    "level": 45,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Trout_Hop",
+    "umName": "Naval Gyrus",
+    "level": 75,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Aquaball",
+    "umName": "Covetous Gerondon",
+    "level": 60,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Snake_Eyes",
+    "umName": "Hazardous Jarrahed",
+    "level": 16,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Hazardous Jarrahed)",
+    "maxProgress": 15
+  },
+  {
+    "type": "Art",
+    "name": "Beast_Howl",
+    "umName": "Lapdog Veece",
+    "level": 9,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Lapdog Veece)",
+    "maxProgress": 15
+  },
+  {
+    "type": "Art",
+    "name": "Hard_Dig",
+    "umName": "Sycophantic Lilith",
+    "level": 5,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Draining_Vacuum",
+    "umName": "Available from Start",
+    "level": 0,
+    "region": "",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Dig",
+    "umName": "Available from Start",
+    "level": 0,
+    "region": "",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Double_Bite",
+    "umName": "Available from Start",
+    "level": 0,
+    "region": "",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Ether_Sphere",
+    "umName": "Seatiger Tridence",
+    "level": 77,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Last_Fencer",
+    "umName": "Raucous Ron",
+    "level": 27,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Raucous Ron)",
+    "maxProgress": 15
+  },
+  {
+    "type": "Art",
+    "name": "Hypnotism",
+    "umName": "Profound Hodzuki",
+    "level": 44,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Profound Hodzuki)",
+    "maxProgress": 10
+  },
+  {
+    "type": "Art",
+    "name": "Poison_Spray",
+    "umName": "Rambler Curalie",
+    "level": 17,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Trick_Dart",
+    "umName": "Witchwind Kujjat",
+    "level": 59,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Vampire_Bat",
+    "umName": "Defiled Ishtar",
+    "level": 65,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Elimination_Beam",
+    "umName": "CLinging Azreel",
+    "level": 69,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Evasion_Posture",
+    "umName": "Dishonest Karom",
+    "level": 69,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Healing_Rest",
+    "umName": "Timbercorn_Cthinos",
+    "level": 61,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Shark_Shock",
+    "umName": "Intrusive Neville",
+    "level": 49,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Bomberhead",
+    "umName": "Oceanic_Lucera",
+    "level": 73,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Life_Plant",
+    "umName": "Gorgeous Mandora",
+    "level": 96,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
     "name": "Jet_Stream",
     "umName": "Otherworldly Rodsin",
     "level": 60,
@@ -10,23 +460,993 @@
     "maxProgress": 100
   },
   {
-    "type": "BArt",
-    "name": "Jet_Stream2",
-    "umName": "Otherworldly Rodsin",
-    "level": 61,
+    "type": "Art",
+    "name": "Electric_Skin",
+    "umName": "Sundappled Floria",
+    "level": 71,
     "region": "Cadensia Region",
     "location": "",
     "upgradeGoal": "Use this Art the specificed number of times.",
     "maxProgress": 100
   },
   {
-    "type": "CArt",
-    "name": "Jet_Stream3",
-    "umName": "Otherworldly Rodsin",
-    "level": 62,
+    "type": "Art",
+    "name": "Aquatic_Missile",
+    "umName": "Frolicking Parker",
+    "level": 31,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Battle_Pheromone",
+    "umName": "Gracious Titania",
+    "level": 50,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Obtain the set amount of gold (only counts some ways, e.g. auto-selling).",
+    "maxProgress": 130000
+  },
+  {
+    "type": "Art",
+    "name": "Cursed_Cuisine",
+    "umName": "Crystalline DuGarre",
+    "level": 27,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Hawk_Shot",
+    "umName": "Terrorbird_Zieger",
+    "level": 37,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Water_Jet",
+    "umName": "Wraithfin Segna",
+    "level": 24,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Hypno-Light",
+    "umName": "Heretical Saurow",
+    "level": 25,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Transient_Bond",
+    "umName": "Seraphic Ceratinia",
+    "level": 120,
+    "region": "Swordmarch",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of unique monsters in total.",
+    "maxProgress": 200
+  },
+  {
+    "type": "Art",
+    "name": "King's_Bash",
+    "umName": "Conqueror Deepwan",
+    "level": 102,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Conqueror Deepwan)",
+    "maxProgress": 3
+  },
+  {
+    "type": "Art",
+    "name": "Dragon_Decree",
+    "umName": "Hardscale Gouran",
+    "level": 66,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Raise the Affinity Level of the given no. of colonies/forces to at least 1.",
+    "maxProgress": 8
+  },
+  {
+    "type": "Art",
+    "name": "Gatling_Peck",
+    "umName": "Heavenrazor Egreet",
+    "level": 90,
+    "region": "Swordmarch",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Ministorm",
+    "umName": "Spartan Fennick",
+    "level": 78,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Burrowing_Rocket",
+    "umName": "Keen Chicky-Chicky",
+    "level": 59,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Bubble_Cloud",
+    "umName": "Househunter Carly",
+    "level": 21,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Hydra_Gas",
+    "umName": "Demonic Krenolur",
+    "level": 75,
     "region": "Cadensia Region",
     "location": "",
     "upgradeGoal": "Use this Art the specificed number of times.",
     "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Shell_Gauntlets",
+    "umName": "Hardshelled Admory",
+    "level": 57,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Use this Art the specificed number of times.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Art",
+    "name": "Piercing_Laser",
+    "umName": "Besieger Sheritt",
+    "level": 48,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Learn the specified number of Arts from monsters in total.",
+    "maxProgress": 50
+  },
+  {
+    "type": "Art",
+    "name": "Pointy_Stick",
+    "umName": "Virtuous Gulkin",
+    "level": 52,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Sumo_Press",
+    "umName": "Indiscreet Gombaba",
+    "level": 12,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this Art.",
+    "maxProgress": 300000
+  },
+  {
+    "type": "Art",
+    "name": "Butterfly_Dust",
+    "umName": "Perturbed Bilkin",
+    "level": 13,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Obtain the set amount of gold (only counts some ways, e.g. auto-selling).",
+    "maxProgress": 100000
+  },
+  {
+    "type": "Skill",
+    "name": "Accelerating_Attacks",
+    "umName": "Petrivore Judomar",
+    "level": 31,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this skill set (not Interlinked).",
+    "maxProgress": 1000000
+  },
+  {
+    "type": "Skill",
+    "name": "Accelerator_Organ",
+    "umName": "Night-Stalker Volodya",
+    "level": 43,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters in total.",
+    "maxProgress": 1300
+  },
+  {
+    "type": "Skill",
+    "name": "Action_Reaction",
+    "umName": "Vengeful_Dominator",
+    "level": 42,
+    "region": "Keves Castle Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Skill",
+    "name": "Air_Body",
+    "umName": "Altruistic Maribel",
+    "level": 29,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Evade the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 200
+  },
+  {
+    "type": "Skill",
+    "name": "Amazing_Growth",
+    "umName": "Tenderling Rumi",
+    "level": 23,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Obtain the set amount of gold (only counts some ways, e.g. auto-selling).",
+    "maxProgress": 160000
+  },
+  {
+    "type": "Skill",
+    "name": "Apothecary's_Wisdom",
+    "umName": "Galloping Ghuldan",
+    "level": 56,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this skill set (not Interlinked).",
+    "maxProgress": 600000
+  },
+  {
+    "type": "Skill",
+    "name": "Aquatic_Warrior",
+    "umName": "Sharpscale Ragoon",
+    "level": 66,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Sharpscale Ragoon)",
+    "maxProgress": 5
+  },
+  {
+    "type": "Skill",
+    "name": "Attack_Heal",
+    "umName": "Ravenous Babayaga",
+    "level": 84,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Obtain the set amount of gold (only counts some ways, e.g. auto-selling).",
+    "maxProgress": 200000
+  },
+  {
+    "type": "Skill",
+    "name": "Attack_Mastery",
+    "umName": "Creeping_Hameel",
+    "level": 67,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Discover the specified number of landmarks in total.",
+    "maxProgress": 130
+  },
+  {
+    "type": "Skill",
+    "name": "Awakilling",
+    "umName": "Widdershins Radler",
+    "level": 48,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 150
+  },
+  {
+    "type": "Skill",
+    "name": "Battle_Fever",
+    "umName": "Fleeting_Shikino",
+    "level": 65,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 50
+  },
+  {
+    "type": "Skill",
+    "name": "Berserker_Mindset",
+    "umName": "Vapid Roger",
+    "level": 70,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 150
+  },
+  {
+    "type": "Skill",
+    "name": "Blasting_Stomp",
+    "umName": "Jingoistic_Gigantus",
+    "level": 80,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 200
+  },
+  {
+    "type": "Skill",
+    "name": "Breath_of_an_Era",
+    "umName": "Fairscale Marina",
+    "level": 66,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Fairscale Marina)",
+    "maxProgress": 5
+  },
+  {
+    "type": "Skill",
+    "name": "Celestial_Conqueror",
+    "umName": "Ragemaw Tempeldo",
+    "level": 78,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this skill set (not Interlinked).",
+    "maxProgress": 1000000
+  },
+  {
+    "type": "Skill",
+    "name": "Counter_Puncher",
+    "umName": "Fang-King Clavein",
+    "level": 80,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 50
+  },
+  {
+    "type": "Skill",
+    "name": "Creeping_Predator",
+    "umName": "Jealous Mizraile",
+    "level": 72,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this skill set (not Interlinked).",
+    "maxProgress": 1000000
+  },
+  {
+    "type": "Skill",
+    "name": "Damage_Share",
+    "umName": "Ambusher Tirion",
+    "level": 39,
+    "region": "Keves Castle Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 250
+  },
+  {
+    "type": "Skill",
+    "name": "Dangerous_Claws",
+    "umName": "Soaring Virion",
+    "level": 36,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this skill set (not Interlinked).",
+    "maxProgress": 1000000
+  },
+  {
+    "type": "Skill",
+    "name": "Debuff_Counter",
+    "umName": "Darkening_Asha",
+    "level": 65,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 150
+  },
+  {
+    "type": "Skill",
+    "name": "Deeply_Tactical",
+    "umName": "Talkative Dirakha",
+    "level": 63,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters in total.",
+    "maxProgress": 2500
+  },
+  {
+    "type": "Skill",
+    "name": "Defense_Mastery",
+    "umName": "Pressing_Rafeel",
+    "level": 69,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Raise the Affinity Level of the given no. of colonies/forces to at least 1.",
+    "maxProgress": 10
+  },
+  {
+    "type": "Skill",
+    "name": "Defense_Time",
+    "umName": "Unruffled Narrah",
+    "level": 19,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 200
+  },
+  {
+    "type": "Skill",
+    "name": "Deflector_Plate",
+    "umName": "Thunderclap Dalton",
+    "level": 43,
+    "region": "Keves Castle Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of unique monsters in total.",
+    "maxProgress": 50
+  },
+  {
+    "type": "Skill",
+    "name": "Dodge_Acceleration",
+    "umName": "Gushing Masquin",
+    "level": 24,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Evade the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 200
+  },
+  {
+    "type": "Skill",
+    "name": "Drain_Guard",
+    "umName": "Stoneclipper Gorse",
+    "level": 25,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Block the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 100
+  },
+  {
+    "type": "Skill",
+    "name": "Dual-Horn_Pressure",
+    "umName": "Hornbow Dante",
+    "level": 55,
+    "region": "Keves Castle Region",
+    "location": "",
+    "upgradeGoal": "Evade the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 200
+  },
+  {
+    "type": "Skill",
+    "name": "Eagle_Rush",
+    "umName": "Perilwing Ryuho",
+    "level": 100,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters in total.",
+    "maxProgress": 2200
+  },
+  {
+    "type": "Skill",
+    "name": "Emergency_Turbo",
+    "umName": "Repulsive Deepus",
+    "level": 24,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this skill set (not Interlinked).",
+    "maxProgress": 600000
+  },
+  {
+    "type": "Skill",
+    "name": "Emperor_of_Violence",
+    "umName": "Slack-Jawed_Zephal",
+    "level": 80,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 250
+  },
+  {
+    "type": "Skill",
+    "name": "Energy_Efficiency",
+    "umName": "Turbulent Martinez",
+    "level": 43,
+    "region": "Keves Castle Region",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this skill set (not Interlinked).",
+    "maxProgress": 600000
+  },
+  {
+    "type": "Skill",
+    "name": "Excessive_Armor",
+    "umName": "Taskmaster Imperion",
+    "level": 49,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Block the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 100
+  },
+  {
+    "type": "Skill",
+    "name": "Exoshell",
+    "umName": "Phony Temnos",
+    "level": 69,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this skill set (not Interlinked).",
+    "maxProgress": 1000000
+  },
+  {
+    "type": "Skill",
+    "name": "Fiery_Morale",
+    "umName": "Impregnable Sandhu",
+    "level": 82,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters in total.",
+    "maxProgress": 2000
+  },
+  {
+    "type": "Skill",
+    "name": "Grace_of_the_Land",
+    "umName": "Spiralhorn Baccro",
+    "level": 56,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Learn the specified number of skills from monsters in total.",
+    "maxProgress": 40
+  },
+  {
+    "type": "Skill",
+    "name": "Healing_Mastery",
+    "umName": "Reaping Anteel",
+    "level": 72,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Discover the specified number of Secret Areas in total.",
+    "maxProgress": 6
+  },
+  {
+    "type": "Skill",
+    "name": "Heavy_Armor",
+    "umName": "Protector Revelta",
+    "level": 64,
+    "region": "Keves Castle Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Protector Revelta)",
+    "maxProgress": 5
+  },
+  {
+    "type": "Skill",
+    "name": "Hot_Soul",
+    "umName": "Dreadwyrm Nizoont",
+    "level": 105,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Learn the specified number of skills from monsters in total.",
+    "maxProgress": 55
+  },
+  {
+    "type": "Skill",
+    "name": "Instant_Charge",
+    "umName": "Joyful Nimroog",
+    "level": 68,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Skill",
+    "name": "Just_a_Moment",
+    "umName": "Migratory Circe",
+    "level": 14,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this skill set (not Interlinked).",
+    "maxProgress": 600000
+  },
+  {
+    "type": "Skill",
+    "name": "Large-Scale_Shock",
+    "umName": "Godlike Krastor",
+    "level": 82,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this skill set (not Interlinked).",
+    "maxProgress": 1000000
+  },
+  {
+    "type": "Skill",
+    "name": "Magic_Transmutation",
+    "umName": "Artificial Optho",
+    "level": 69,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Skill",
+    "name": "Mano_a_Mano_Evasion",
+    "umName": "Trickfist Tuano",
+    "level": 66,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Evade the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 200
+  },
+  {
+    "type": "Skill",
+    "name": "Megashout",
+    "umName": "Doomfang Caum",
+    "level": 50,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Doomfang Caum)",
+    "maxProgress": 10
+  },
+  {
+    "type": "Skill",
+    "name": "Mimic_Technique",
+    "umName": "Phantom Streya",
+    "level": 51,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Skill",
+    "name": "Monarch's_Heart",
+    "umName": "Kilocorn Grandeps",
+    "level": 95,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Block the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 100
+  },
+  {
+    "type": "Skill",
+    "name": "Natural_Guard",
+    "umName": "Dapper Sepiar",
+    "level": 22,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Block the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 100
+  },
+  {
+    "type": "Skill",
+    "name": "Needle_Shell",
+    "umName": "Barbed Merod",
+    "level": 51,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Barbed Merod)",
+    "maxProgress": 10
+  },
+  {
+    "type": "Skill",
+    "name": "Nimbleness_Itself",
+    "umName": "Craven Piggard",
+    "level": 38,
+    "region": "Keves Castle Region",
+    "location": "",
+    "upgradeGoal": "Evade the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 200
+  },
+  {
+    "type": "Skill",
+    "name": "Non-Stop_Barrage",
+    "umName": "Impish Langobard",
+    "level": 74,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 100
+  },
+  {
+    "type": "Skill",
+    "name": "One_with_the_Land",
+    "umName": "Miraging Yuri",
+    "level": 65,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Miraging Yuri)",
+    "maxProgress": 5
+  },
+  {
+    "type": "Skill",
+    "name": "Physical_Absorber",
+    "umName": "Phantasmagorical Rist",
+    "level": 35,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this skill set (not Interlinked).",
+    "maxProgress": 600000
+  },
+  {
+    "type": "Skill",
+    "name": "Positional_Attacker",
+    "umName": "Sharkblade Nedd",
+    "level": 67,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Learn the specified number of Arts from monsters in total.",
+    "maxProgress": 60
+  },
+  {
+    "type": "Skill",
+    "name": "Power_Pick-Me-Up",
+    "umName": "Levialord Empireo",
+    "level": 110,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this skill set (not Interlinked).",
+    "maxProgress": 1000000
+  },
+  {
+    "type": "Skill",
+    "name": "Queenly_Pride",
+    "umName": "Spiky Aurelia",
+    "level": 63,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this skill set (not Interlinked).",
+    "maxProgress": 1000000
+  },
+  {
+    "type": "Skill",
+    "name": "Queen_of_Mercy",
+    "umName": "Abysmal Rakshmi",
+    "level": 64,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this skill set (not Interlinked).",
+    "maxProgress": 600000
+  },
+  {
+    "type": "Skill",
+    "name": "Recharge_Cheer",
+    "umName": "Cruelfist Rojou",
+    "level": 66,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of unique monsters in total.",
+    "maxProgress": 80
+  },
+  {
+    "type": "Skill",
+    "name": "Reckless_Attack",
+    "umName": "Navigator Helios",
+    "level": 48,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Navigator Helios)",
+    "maxProgress": 5
+  },
+  {
+    "type": "Skill",
+    "name": "Reserve_Life",
+    "umName": "Bushwhacker Farritt",
+    "level": 48,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this skill set (not Interlinked).",
+    "maxProgress": 600000
+  },
+  {
+    "type": "Skill",
+    "name": "Revenge_Impetus",
+    "umName": "Crafty Anskey",
+    "level": 54,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Evade the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 200
+  },
+  {
+    "type": "Skill",
+    "name": "Royal_Aide",
+    "umName": "Dimwitted Tirkin",
+    "level": 45,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this skill set (not Interlinked).",
+    "maxProgress": 600000
+  },
+  {
+    "type": "Skill",
+    "name": "Royal_Charisma",
+    "umName": "Heroic Gulkin",
+    "level": 76,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 250
+  },
+  {
+    "type": "Skill",
+    "name": "Sacrificial_Heal",
+    "umName": "Farseer Pirtett",
+    "level": 40,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this skill set (not Interlinked).",
+    "maxProgress": 600000
+  },
+  {
+    "type": "Skill",
+    "name": "Sandsmoke",
+    "umName": "Gallivanter Buckley",
+    "level": 30,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this skill set (not Interlinked).",
+    "maxProgress": 1000000
+  },
+  {
+    "type": "Skill",
+    "name": "Scattered_Healing",
+    "umName": "Stately Doramma",
+    "level": 64,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Stately Doramma)",
+    "maxProgress": 5
+  },
+  {
+    "type": "Skill",
+    "name": "Sense_of_Danger",
+    "umName": "Stonehoof Torphan",
+    "level": 57,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 50
+  },
+  {
+    "type": "Skill",
+    "name": "Spiritual_Absorber",
+    "umName": "Budding Francis",
+    "level": 32,
+    "region": "Pentelas Region",
+    "location": "",
+    "upgradeGoal": "Heal the specified amount of HP with this skill set (not Interlinked).",
+    "maxProgress": 600000
+  },
+  {
+    "type": "Skill",
+    "name": "Strength_Support",
+    "umName": "Killhappy Brijaidor",
+    "level": 79,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 150
+  },
+  {
+    "type": "Skill",
+    "name": "Strike_Shirker",
+    "umName": "Dunesea Marcellus",
+    "level": 87,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Evade the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 200
+  },
+  {
+    "type": "Skill",
+    "name": "Supercharged",
+    "umName": "Determined Vatslav",
+    "level": 43,
+    "region": "Keves Castle Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 200
+  },
+  {
+    "type": "Skill",
+    "name": "Super_Explosion",
+    "umName": "Infiltrator Garnach",
+    "level": 64,
+    "region": "Keves Castle Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Infiltrator Garnach)",
+    "maxProgress": 5
+  },
+  {
+    "type": "Skill",
+    "name": "Surprise_Attack",
+    "umName": "Sharpwitted Tracy",
+    "level": 15,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this skill set (not Interlinked).",
+    "maxProgress": 1000000
+  },
+  {
+    "type": "Skill",
+    "name": "Systematic_Defense",
+    "umName": "Sensitive Catullus",
+    "level": 26,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Block the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 100
+  },
+  {
+    "type": "Skill",
+    "name": "Tactical_Eye",
+    "umName": "Hedonist Tirkin",
+    "level": 23,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Deal the specified amount of damage with this skill set (not Interlinked).",
+    "maxProgress": 1000000
+  },
+  {
+    "type": "Skill",
+    "name": "Terran_Warrior",
+    "umName": "Ghosting Lulika",
+    "level": 65,
+    "region": "Cadensia Region",
+    "location": "",
+    "upgradeGoal": "Defeat the indicated monster(s). (Ghosting Lulika)",
+    "maxProgress": 5
+  },
+  {
+    "type": "Skill",
+    "name": "Ultranull_Shield",
+    "umName": "Well-Plated Zelinka",
+    "level": 53,
+    "region": "Aetia Region",
+    "location": "",
+    "upgradeGoal": "Block the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 100
+  },
+  {
+    "type": "Skill",
+    "name": "Underworld_Rage",
+    "umName": "Unobtrusive Liggy",
+    "level": 43,
+    "region": "Fornis Region",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 200
+  },
+  {
+    "type": "Skill",
+    "name": "Wild_Tendencies",
+    "umName": "Desired Oruria",
+    "level": 86,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Block the specified no. of attacks with this skill set (not Interlinked).",
+    "maxProgress": 100
+  },
+  {
+    "type": "Skill",
+    "name": "Wolf_Spirit",
+    "umName": "Thaumawolf Bajeek",
+    "level": 71,
+    "region": "Origin",
+    "location": "",
+    "upgradeGoal": "Defeat the specified number of monsters with this skill set.",
+    "maxProgress": 150
   }
 ]

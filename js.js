@@ -1,7 +1,7 @@
 const url = "data.json"
 let currentDataState = null
 let saveDataState = []
-let sortDirection = true
+let sortDirection = false
 
 const tableBody = document.querySelector('.tableBody')
 
@@ -108,4 +108,9 @@ function setBackgroundColor(input) {
 function onInputChange(tr) {
   const val = tr.querySelector(`#prog`).value
   localStorage.setItem(`${tr.id}Prog`, val)
+}
+
+function clearLocalStorage() {
+  localStorage.clear()
+  loadData()
 }
