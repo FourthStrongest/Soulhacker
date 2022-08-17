@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- <label for="c1"> <input type="checkbox" name="darkMode" value="red" id="c1">Red</label> -->
-    <label for="patches">Patch:</label>
+    <label title="For the different patches of the game (preloads latest version)" for="patches">Patch:</label>
     <select name="patches" id="patches" onchange="loadPage()">
       <option value="1_0_0">1.0.0</option>
       <option value="1_1_0" selected>1.1.0</option>
@@ -29,11 +29,11 @@
     <table>
       <thead>
         <tr>
-          <th onclick="sortColumn('type')">Type</th>
-          <th onclick="sortColumn('name')">Name</th>
-          <th onclick="sortColumn('umName')">UM Name</th>
-          <th onclick="sortColumn('level')">UM Level</th>
-          <th onclick="sortColumn('region')">Region</th>
+          <th onclick="sortColumn('type')" title="Click to sort">Type</th>
+          <th onclick="sortColumn('name')" title="Click to sort">Name</th>
+          <th onclick="sortColumn('umName')" title="Click to sort">UM Name</th>
+          <th onclick="sortColumn('level')" title="Click to sort">UM Level</th>
+          <th onclick="sortColumn('region')" title="Click to sort">Region</th>
           <th>Location</th>
           <th>Upgrade Goal</th>
           <th>Current Progress</th>
