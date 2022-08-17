@@ -1,20 +1,51 @@
-const url = "data.json"
+const url = "data1_0_0.json"
 let currentDataState = null
-let saveDataState = []
 let sortDirection = false
 
 const tableBody = document.querySelector('.tableBody')
+const patchesDropbox = document.getElementById('patches')
+let patchDictionary = new Map()
 
 window.addEventListener('DOMContentLoaded', () => {
-  loadData()
+  loadPage()
 })
 
-function loadData() {
-  fetch(url).then(rep => rep.json())
-  .then(data => {
-    currentDataState = data
-    loadTableData(data)
+function loadPage() {
+  loadPatchData()
+  loadData()
+}
+
+function loadPatchData() {
+  return new Promise(() => {
+    patchDictionary = new Map()
+    for (let i = 0; i < patchesDropbox.options.length; i++) {
+      const e = patchesDropbox.options[i]
+      // skip first data set as it is the base of all data
+      if (i !== 0) {
+        const patchedDataUrl = `data${e.value}.json`
+        fetch(patchedDataUrl).then(rep => rep.json())
+        .then(data => {
+          for (let j = 0; j < data.length; j++) {
+            patchDictionary.set(data[j].old, data[j].new)
+          }
+        })
+      }
+      // only fills until current version
+      if (e.value === patchesDropbox.value) {
+        break
+      }
+    }
   })
+}
+
+function loadData() {
+  return new Promise(() => {
+    fetch(url).then(rep => rep.json())
+    .then(data => {
+      currentDataState = data
+      loadTableData(data)
+    })
+  }) 
 }
 
 function loadTableData(data) {
@@ -31,11 +62,11 @@ function loadTableData(data) {
     let trHtml = `
     <tr id=${e.name} style='background-color: ${setBackgroundColors(acquiredElement.firstChild, upgradedElement.firstChild)}'>
       <td>${e.type}</td>
-      <td>${e.name.replace('_', ' ')}</td>
+      <td>${getPatchedName(e.name)}</td>
       <td>${e.umName}</td>
       <td>${e.level}</td>
       <td>${e.region}</td>
-      <td>${e.location}</td>
+      <td><img src="${e.location}"</td>
       <td>${e.upgradeGoal}</td>
       <td><input id='prog' value=${localStorage.getItem(`${e.name}Prog`) || 0} oninput='onInputChange(this.parentNode.parentNode)'></td>
       <td>${e.maxProgress}</td>
@@ -47,6 +78,14 @@ function loadTableData(data) {
   })
 
   tableBody.innerHTML = dataHtml
+}
+
+function getPatchedName(name) {
+  if (patchDictionary.has(name)) {
+    name = patchDictionary.get(name)
+  }
+
+  return name.replaceAll('_', ' ')
 }
 
 function sortColumn(columnName) {

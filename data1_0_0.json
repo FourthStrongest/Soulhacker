@@ -441,16 +441,6 @@
   },
   {
     "type": "Art",
-    "name": "Life_Plant",
-    "umName": "Gorgeous Mandora",
-    "level": 96,
-    "region": "Pentelas Region",
-    "location": "",
-    "upgradeGoal": "Heal the specified amount of HP with this Art.",
-    "maxProgress": 300000
-  },
-  {
-    "type": "Art",
     "name": "Jet_Stream",
     "umName": "Otherworldly Rodsin",
     "level": 60,
