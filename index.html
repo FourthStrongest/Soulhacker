@@ -2,13 +2,6 @@
 <html>
   <head>
     <style>
-      tr:nth-child(even) {
-        background-color: rgba(200, 200, 200, 0.5);
-      }
-      td {
-        padding-left: 5;
-        padding-right: 5;
-      }
       img {
         padding-top: 4;
         padding-bottom: 4;
@@ -58,24 +51,24 @@
       <br />
 
       <div>
-        <button id="percentButton" onclick="togglePercentTable()">Hide Percent Tables</button>
-        <div id="percentDiv">
-          <table id="percentTable">
+        <button id="percentButton" class="btn btn-primary" onclick="togglePercentTable()">Hide Percent Tables</button>
+        <div id="percentDiv" style="margin-top: 10px">
+          <table class="table table-bordered table-sm" id="percentTable">
             <tr id="currArts">
               <td>Current Arts Acquired: </td>
               <td id="currArtAcq">0/0</td>
-              <td>Current Arts Upgraded: </td>
-              <td id="currArtUpg">0/0</td>
-            </tr>
-            <tr id="currSkills">
               <td>Current Skills Acquired: </td>
               <td id="currSkillAcq">0/0</td>
+              <td colspan="2"></td>
+            </tr>
+            <tr id="currSkills">
+            <td>Current Arts Upgraded: </td>
+              <td id="currArtUpg">0/0</td>
               <td>Current Skills Upgraded: </td>
               <td id="currSkillUpg">0/0</td>
+              <td colspan="2"></td>
             </tr>
-          </table>
-          <table>
-            <tr id="totals">
+            <tr id="totals" class="table-primary">
               <td>Arts Upgraded: </td>
               <td id="artPercent">0%</td>
               <td>Skills Upgraded: </td>
