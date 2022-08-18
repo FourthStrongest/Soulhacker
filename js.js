@@ -2,6 +2,7 @@ const url = "data1_0_0.json"
 let currentDataState = null
 let sortDirection = false
 let percentTableToggle = true
+let globalResizeToggle = false
 
 const tableBody = document.querySelector('.tableBody')
 const patchesDropbox = document.getElementById('patches')
@@ -71,6 +72,7 @@ function loadData() {
 }
 
 function loadTableData(data) {
+  globalResizeToggle = false
   let dataHtml = ''
 
   currArtAcq = 0
@@ -105,20 +107,20 @@ function loadTableData(data) {
       <td>${e.umName.replaceAll('_', ' ')}</td>
       <td>${e.level}</td>
       <td>${e.region}</td>
-      <td><img src="${e.location}"</td>
+      <td id="imgTd"><img id="img" src="assets/${e.umName}.png" onclick="globalImageResize()" data-isToggledOn="false" style="width:100%; height:auto;"></td>
       <td>${e.upgradeGoal}</td>
       <td><input id='prog' class='form-control' value=${localStorage.getItem(`${e.name}Prog`) || 0} oninput='onInputChange(this.parentNode.parentNode)'></td>
       <td>${e.maxProgress}</td>
       <td>${acquiredElement.innerHTML}</td>
       <td>${upgradedElement.innerHTML}</td></tr>
     `
-
     dataHtml += trHtml
 
     counter(e.type, e.name)
   })
 
   tableBody.innerHTML = dataHtml
+  console.log(`${currArtAcq}, ${currArtUpg}, ${maxArt}, ${currSkillAcq}, ${currSkillUpg}, ${maxSkill}`)
 }
 
 function getPatchedName(name) {
@@ -156,6 +158,30 @@ function counter(type, name) {
     skillPercentTd.innerText = `${Math.round((currSkillUpg / maxSkill) * 100) / 100}%`
   }
   totalPercentTd.innerText = `${Math.round(((currArtUpg + currSkillUpg) / (maxArt + maxSkill)) * 100) / 100}%`
+}
+
+function globalImageResize() {
+  const firstImg = document.getElementById('Horn_Dance').querySelector('#imgTd').querySelector('#img')
+  globalResizeToggle = !globalResizeToggle
+  if (globalResizeToggle === true) {
+    firstImg.style.width = ""
+    firstImg.style.height = ""
+  } else {
+    firstImg.style.width = "100%"
+    firstImg.style.height = "auto"
+  }
+}
+
+function imageResize(img) {
+  const toggle = img.getAttribute("data-isToggledOn") === "true" ? "false" : "true"
+  if (toggle === "true") {
+    img.style.width = ""
+    img.style.height = ""
+  } else {
+    img.style.width = "100%"
+    img.style.height = "auto"
+  }
+  img.setAttribute("data-isToggledOn", toggle)
 }
 
 function sortColumn(columnName) {
