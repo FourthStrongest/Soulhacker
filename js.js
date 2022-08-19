@@ -120,7 +120,6 @@ function loadTableData(data) {
   })
 
   tableBody.innerHTML = dataHtml
-  console.log(`${currArtAcq}, ${currArtUpg}, ${maxArt}, ${currSkillAcq}, ${currSkillUpg}, ${maxSkill}`)
 }
 
 function getPatchedName(name) {
@@ -142,7 +141,7 @@ function counter(type, name) {
     }
     currArtAcqTd.innerText = `${currArtAcq}/${maxArt}`
     currArtUpgTd.innerText = `${currArtUpg}/${maxArt}`
-    artPercentTd.innerText = `${Math.round((currArtUpg / maxArt) * 100) / 100}%`
+    artPercentTd.innerText = `${Math.round((currArtUpg / maxArt) * 100)}%`
   }
 
   if (type === "Skill") {
@@ -155,9 +154,19 @@ function counter(type, name) {
     }
     currSkillAcqTd.innerText = `${currSkillAcq}/${maxSkill}`
     currSkillUpgTd.innerText = `${currSkillUpg}/${maxSkill}`
-    skillPercentTd.innerText = `${Math.round((currSkillUpg / maxSkill) * 100) / 100}%`
+    skillPercentTd.innerText = `${Math.round((currSkillUpg / maxSkill) * 100)}%`
   }
-  totalPercentTd.innerText = `${Math.round(((currArtUpg + currSkillUpg) / (maxArt + maxSkill)) * 100) / 100}%`
+  totalPercentTd.innerText = `${Math.round(((currArtUpg + currSkillUpg) / (maxArt + maxSkill)) * 100)}%`
+  setTotalBonus()
+}
+
+function setTotalBonus() {
+  const total = currArtUpg + currSkillUpg === maxArt + maxSkill
+  const header = document.getElementById("header")
+  header.innerText = total ? "CONGRATULATIONS!! YOU ARE ONE OF THE MEN OF THE SEA" : "Soulhacker Tracker"
+  const bonusImg = document.getElementById("bonus")
+  bonusImg.src = total ? "assets/dancin.gif" : ""
+  document.body.style.backgroundImage = total ? "url(assets/captain.png)" : ""
 }
 
 function globalImageResize() {
