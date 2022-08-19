@@ -24,6 +24,7 @@ let maxSkill = 0
 
 let showUpgraded = (localStorage.getItem("show-upgraded") || "true") === "true";
 let showAcquired = (localStorage.getItem("show-acquired") || "true") === "true";
+let darkModeToggle = (localStorage.getItem("darkMode") || "false") === "true";
 
 window.addEventListener('DOMContentLoaded', () => {
   loadPage()
@@ -36,6 +37,7 @@ function loadPage() {
   // Sync checkbox status
   document.getElementById("show-acquired").checked = showAcquired;
   document.getElementById("show-upgraded").checked = showUpgraded;
+  document.getElementById("darkMode").checked = darkModeToggle;
 }
 
 function loadPatchData() {
@@ -89,10 +91,6 @@ function loadTableData(data) {
     const isAcquired = localStorage.getItem(`${e.name}Acq`) === 'true';
     const isUpgraded = localStorage.getItem(`${e.name}Upg`) === 'true';
     
-    if ((!showAcquired && isAcquired) || (!showUpgraded && isUpgraded)) {
-      return "";
-    }
-    
     const acquiredHtml = `<input type='checkbox' class='form-check-input' id='acquired' onclick='onClickAcqCheckbox(this.parentNode.parentNode)' ${isAcquired ? 'checked' : ''}>`
     const upgradedHtml = `<input type='checkbox' class='form-check-input' id='upgraded' onclick='onClickUpgCheckbox(this.parentNode.parentNode)' ${isUpgraded ? 'checked' : ''}>`
     acquiredElement.innerHTML = acquiredHtml
@@ -101,7 +99,7 @@ function loadTableData(data) {
     const bgColor = setBackgroundColors(acquiredElement.firstChild, upgradedElement.firstChild);
 
     let trHtml = `
-    <tr id=${e.name} ${bgColor ? "style='background-color: " + bgColor + "'" : ""}>
+    <tr id=${e.name} ${bgColor ? "style='background-color: " + bgColor + "'" : ""} ${(!showAcquired && isAcquired) || (!showUpgraded && isUpgraded) ? "hidden" : ""}>
       <td id="type">${e.type}</td>
       <td>${getPatchedName(e.name)}</td>
       <td>${e.umName.replaceAll('_', ' ')}</td>
@@ -120,6 +118,7 @@ function loadTableData(data) {
   })
 
   tableBody.innerHTML = dataHtml
+  setDarkMode()
 }
 
 function getPatchedName(name) {
@@ -312,4 +311,24 @@ function togglePercentTable() {
   percentDiv.style.display = percentTableToggle ? "none" : "block"
   percentButton.innerText = `${percentTableToggle ? "Show" : "Hide"} Percent Tables`
   percentTableToggle = !percentTableToggle
+}
+
+function toggleDarkMode(checkbox) {
+  darkModeToggle = checkbox.checked
+  setDarkMode()
+  localStorage.setItem("darkMode", darkModeToggle);
+}
+
+function setDarkMode() {
+  const textColor = darkModeToggle ? 'rgb(230, 230, 230)' : 'rgb(24,26,27)'
+  const trs = document.querySelectorAll('td')
+  trs.forEach(tr => { tr.style.color = textColor })
+  const ths = document.querySelectorAll('th')
+  ths.forEach(th => { th.style.color = textColor })
+  document.body.style.color = textColor
+
+  document.body.style.background = darkModeToggle ? 'rgb(24,26,27)' : `rgb(240, 240, 240)`
+
+  const thead = document.querySelector('thead')
+  thead.class = `table-${darkModeToggle ? 'dark' : 'light'}`
 }
